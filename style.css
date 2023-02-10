@@ -105,7 +105,7 @@
 }
 
 .modal {
-    width: 60%;
+    width: 0%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -115,6 +115,24 @@
     transform: translate(-50%, -50%);
     display: flex;
     border-top: 20px groove khaki;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+.modal.active{
+    opacity: 1;
+    z-index: 1;
+    width: 60%;
+}
+
+.modal .close-icon{
+    position: absolute;
+    right: -20px;
+    top: -45px;
+    font-size: 30px;
+    padding: 10px;
+    color: darkkhaki;
 }
 
 .modal .left-modal {
@@ -197,8 +215,8 @@
     margin: 10px 5px;
 }
 
-button:disabled{
-    background-color: burlywood;
+.modal .right-modal .input-box button:disabled{
+    filter: grayscale(80%);
 }
 
 
