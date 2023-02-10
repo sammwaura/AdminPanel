@@ -12,20 +12,19 @@ closeBtn.addEventListener("click", ()=>{
 
 var registerBtn = document.querySelector("#register-btn");
 var userData = [];
-var prodId = document.getElementById("id");
-var prodName = document.getElementById("#name");
-var prodQuantity = document.getElementById("#quantity");
+var idProd = document.getElementById("id");
+var nameProd = document.querySelector("#name");
+var quantityProd = document.querySelector("#quantity");
 
-registerBtn.onclick = function(){
-    alert("registered!");
+registerBtn.addEventListener("click", ()=>{
     registerData();
-}
+})
 
 function registerData(){
     userData.push({
-        id : prodId.value,
-        name : prodName.value,
-        quantity : prodQuantity,
+        id : idProd.value,
+        name : nameProd.value,
+        quantity : quantityProd.value
     });
     var userString = JSON.stringify(userData);
     localStorage.setItem("userData", userString);
