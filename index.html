@@ -32,7 +32,7 @@
         </div>
 
         <div class="table-box">
-            <table>
+            <table id="table-data">
                 <tr>
                     <th>Prod Img</th>
                     <th>Prod ID</th>
@@ -58,28 +58,31 @@
             <i class="fa fa-times-circle close-icon"></i>
             <div class="left-modal">
                 <div class="img-box">
-                    <img src="images/loafers.jpg" width="150" height="150" alt="">
+                    <img src="images/loafers.jpg"  width="150" height="150" alt="">
                     <i class="fa fa-plus"></i>
                     <input type="file">
                 </div>
             </div>
             <div class="right-modal">
-                <div class="input-box">
-                    <label for="id">Id</label>
-                    <input type="text" id="id">
-                </div>
-                <div class="input-box">
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                </div>
-                <div class="input-box">
-                    <label for="quantity">Quantity</label>
-                    <input type="text" id="quantity">
-                </div>
-                <div class="input-box">
-                    <button id="register-btn">Register</button>
-                    <button disabled="disabled" style="background-color: burlywood;">Update</button>
-                </div>
+                <form id="register-form" action="">
+                    <div class="input-box">
+                        <label for="id">Id</label>
+                        <input type="text" id="id">
+                    </div>
+                    <div class="input-box">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input-box">
+                        <label for="quantity">Quantity</label>
+                        <input type="text" id="quantity">
+                    </div>
+                    <div class="input-box">
+                        <button id="register-btn">Register</button>
+                        <button disabled="disabled" style="background-color: burlywood;">Update</button>
+                    </div>
+                </form>
+   
             </div>
         </div>
         <script src="js/main.js"></script>
