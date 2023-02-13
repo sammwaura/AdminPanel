@@ -8,7 +8,11 @@
         <title>Admin Dashboard</title>
 
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     </head>
 
     <body>
@@ -49,24 +53,24 @@
             <i class="fa fa-times-circle close-icon"></i>
             <div class="left-modal">
                 <div class="img-box">
-                    <img src="images/loafers.jpg"  width="150" height="150" alt="">
+                    <img src="images/default.jpg" id="product-pic" width="150" height="150" alt="">
                     <i class="fa fa-plus"></i>
-                    <input type="file">
+                    <input type="file" name="file" id="upload-field">
                 </div>
             </div>
             <div class="right-modal">
                 <form id="register-form" action="">
                     <div class="input-box">
-                        <label for="id">Id</label>
-                        <input type="text" id="id">
+                        <label for="id">Serial Id</label>
+                        <input type="text" required id="id">
                     </div>
                     <div class="input-box">
                         <label for="name">Name</label>
-                        <input type="text" id="name">
+                        <input type="text" required id="name">
                     </div>
                     <div class="input-box">
                         <label for="quantity">Quantity</label>
-                        <input type="text" id="quantity">
+                        <input type="text" required id="quantity">
                     </div>
                     <div class="input-box">
                         <button id="register-btn">Register</button>

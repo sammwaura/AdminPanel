@@ -138,7 +138,7 @@
 .modal .left-modal {
     width: 30%;
     height: 100%;
-    background-color: wheat;
+    background-color: white;
 }
 
 .modal .left-modal .img-box{
@@ -163,13 +163,13 @@
     font-size: 30px;
     padding: 10px;
     position: absolute;
-    right: 40px;
+    right: 28px;
     top: 90px;
     color: brown;
-
+    cursor: pointer;
 }
 
-.modal .left-modal .img-box img {
+.modal .left-modal .img-box img{
     border-radius: 10px;
 }
 
