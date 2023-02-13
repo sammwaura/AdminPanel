@@ -58,7 +58,7 @@ const getDataFromLocal = () =>{
             <td>${data.name}</td>
             <td>${data.quantity}</td>
             <td>
-                <button><i class="fa fa-eye"></i></button>
+                <button class="edit-btn"><i class="fa fa-eye"></i></button>
                 <button class="del-btn" style="background-color: burlywood;"><i class="fa fa-trash"></i></button>
             </td>
         </tr>
@@ -94,6 +94,11 @@ const getDataFromLocal = () =>{
 
         }
     }
+
+    // update code
+
+    var allEditBtn = document.querySelectorAll("edit-btn");
+    console.log(allEditBtn);
 
 
 }
